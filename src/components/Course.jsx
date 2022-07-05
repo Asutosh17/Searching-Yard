@@ -9,9 +9,9 @@ export const Course = () => {
 
 
     const [state, setState] = useState([])
-    const [search, setSearch] = useState("")
+    const [search, setSearch] = useState(" ")
     const [page, setPage] = useState(1)
-    const [presentpage, setPresentPage] = useState(0)
+    // const [presentpage, setPresentPage] = useState(0)
 
 
     useEffect(() => {
@@ -34,9 +34,9 @@ export const Course = () => {
     const handleSearch = (e) => {
         e.preventDefault();
          axios.get(`http://localhost:5000/courses?q=${search}`).then((res) => {
-            console.log(res.data);
+            // console.log(res.data);
             setState(res.data)
-            setSearch("")
+            setSearch(" ")
         })
     }
 
@@ -44,12 +44,12 @@ export const Course = () => {
         let value = e.target.value
         if(value == "LowToHigh"){
             axios.get(`http://localhost:5000/courses?_sort=price&_order=asc`).then((res) => {
-            console.log(res.data);
+            // console.log(res.data);
             setState(res.data)
         })
         }else if(value == "HighToLow"){
             axios.get(`http://localhost:5000/courses?_sort=price&_order=desc`).then((res) => {
-                console.log(res.data);
+                // console.log(res.data);
                 setState(res.data)
             })
         }
@@ -84,7 +84,7 @@ export const Course = () => {
     <Box>
 
     <Box display='flex' justifyContent='center' marginTop='30px'>
-    <Input variant='filled' placeholder='Search Course Here' width={500} onChange={(e) => setSearch(e.target.value)}/>
+    <Input variant='filled' placeholder='Search Course Here' width={["150px","300px","450px"]} onChange={(e) => setSearch(e.target.value)}/>
     <IconButton aria-label='Search database' icon={<SearchIcon />} onClick={handleSearch}/>
     </Box>
     

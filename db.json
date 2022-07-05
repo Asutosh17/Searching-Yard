@@ -108,8 +108,8 @@
         },
         {
             "id" : 14,
-            "title":"C++",
-            "image":"https://hackr.io/blog/cpp-course/thumbnail/large?ezimgfmt=ng%3Awebp%2Fngcb1%2Frs%3Adevice%2Frscb1-1",
+            "title":"Swift",
+            "image":"https://coresumo.com/wp-content/uploads/2021/06/Swift-Programming-language-1024x576.jpg",
             "level":"Beginner",
             "hour":"9hr",
             "price":1800 
