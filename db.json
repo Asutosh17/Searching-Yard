@@ -1,0 +1,119 @@
+{
+    "courses":[
+        {
+            "id" : 1,
+            "title":"Javascript",
+            "image":"https://www.simplilearn.com/ice9/free_resources_article_thumb/X_Reasons_to_learn_Javascript.jpg",
+            "level":"Beginner",
+            "hour":"12hr",
+            "price":2000
+        },
+        {
+            "id" : 2,
+            "title":"PHP",
+            "image":"https://laracasts.s3.amazonaws.com/series/thumbnails/social-cards/php8-crash-course.png?v=12",
+            "level":"Beginner",
+            "hour":"5hr",
+            "price":1000
+        },
+        {
+            "id" : 3,
+            "title":"Java",
+            "image":"https://www.calltutors.com/blog/wp-content/uploads/2022/03/Programar-Java.webp",
+            "level":"Intermediate",
+            "hour":"20hr",
+            "price":3000 
+        },
+        {
+            "id" : 4,
+            "title":"C",
+            "image":"https://www.simplilearn.com/ice9/free_resources_article_thumb/X_Reasons_to_learn_Javascript.jpg",
+            "level":"Beginner",
+            "hour":"10hr",
+            "price":1500
+        },
+        {
+            "id" : 5,
+            "title":"Python",
+            "image":"https://www.simplilearn.com/ice9/free_resources_article_thumb/X_Reasons_to_learn_Javascript.jpg",
+            "level":"Beginner",
+            "hour":"7hr",
+            "price":3500
+        },
+        {
+            "id" : 6,
+            "title":"Ruby",
+            "image":"https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/v1/course-uploads/4338ce4e-f809-4f5a-80f4-1d317c4a390d/er8042ai6kr8-ruby-course-thumbnail-detail.png",
+            "level":"Beginner",
+            "hour":"15hr",
+            "price":4000
+        },
+        {
+            "id" : 7,
+            "title":"Node Js",
+            "image":"https://www.simplilearn.com/ice9/free_resources_article_thumb/X_Reasons_to_learn_Javascript.jpg",
+            "level":"Intermediate",
+            "hour":"13hr",
+            "price":2500 
+        },
+        {
+            "id" : 8,
+            "title":"React Js",
+            "image":"https://www.simplilearn.com/ice9/free_resources_article_thumb/X_Reasons_to_learn_Javascript.jpg",
+            "level":"Proficient",
+            "hour":"11hr",
+            "price":5000 
+        },
+        {
+            "id" : 9,
+            "title":"Vue JS",
+            "image":"https://www.simplilearn.com/ice9/free_resources_article_thumb/X_Reasons_to_learn_Javascript.jpg",
+            "level":"Proficient",
+            "hour":"8hr",
+            "price":5500 
+        },
+        {
+            "id" : 10,
+            "title":"Next JS",
+            "image":"https://www.simplilearn.com/ice9/free_resources_article_thumb/X_Reasons_to_learn_Javascript.jpg",
+            "level":"Proficient",
+            "hour":"4hr",
+            "price":6000 
+        },
+        {
+            "id" : 11,
+            "title":"HTML",
+            "image":"https://www.simplilearn.com/ice9/free_resources_article_thumb/X_Reasons_to_learn_Javascript.jpg",
+            "level":"Beginner",
+            "hour":"2hr",
+            "price":500 
+
+        },
+        {
+            "id" : 12,
+            "title":"HTML",
+            "image":"https://www.simplilearn.com/ice9/free_resources_article_thumb/X_Reasons_to_learn_Javascript.jpg",
+            "level":"Beginner",
+            "hour":"2hr",
+            "price":500 
+
+        },{
+            "id" : 13,
+            "title":"HTML",
+            "image":"https://www.simplilearn.com/ice9/free_resources_article_thumb/X_Reasons_to_learn_Javascript.jpg",
+            "level":"Beginner",
+            "hour":"2hr",
+            "price":500 
+
+        },
+        {
+            "id" : 14,
+            "title":"HTML",
+            "image":"https://www.simplilearn.com/ice9/free_resources_article_thumb/X_Reasons_to_learn_Javascript.jpg",
+            "level":"Beginner",
+            "hour":"2hr",
+            "price":500 
+
+        }
+    ]
+}
