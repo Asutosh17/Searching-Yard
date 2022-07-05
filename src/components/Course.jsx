@@ -89,8 +89,7 @@ export const Course = () => {
     </Box>
     
 
-    <Box display={["block","flex","flex"]} justifyContent='space-between' margin={["auto","10px","20px"]} marginBottom={["35px","50px","50px"]}>
-
+    <Box display={["block","flex","flex"]} justifyContent='space-between' margin={["auto","10px","20px"]} marginBottom={["35px","50px","50px"]} marginTop='20px'>
     <Box w='150px'>
     <Select placeholder='Filter By' onChange={handleFilter} size='sm'>
        {filterValues.map((e,index) => (<option value={e} key={index}>{e}</option>)
@@ -104,7 +103,6 @@ export const Course = () => {
         )}
     </Select>
     </Box>
-
     </Box>
 
     <Grid templateColumns={["repeat(1,300px)","","repeat(3,400px)"]} textAlign="center" gap={10} margin="auto" justifyContent={["center","","space-around"]} >
@@ -122,7 +120,7 @@ export const Course = () => {
         }
     </Grid>
 
-        <Box display='flex' gap='10px' marginTop='50px' justifyContent='center'>
+        <Box display='flex' gap='10px' marginTop={['80px','100px','170px']} justifyContent='center'>
             <Button onClick = {() => {if(page == 1){
                             setPage(page)
 
