@@ -25,7 +25,7 @@ export const Course = () => {
     const limit = 3
 
     const fetchData = () => {
-        axios.get(`http://localhost:5000/courses?_page=${page}&_limit=${limit}`).then((res) => {
+        axios.get(`https://seaarching-yard-dataabase.herokuapp.com/courses?_page=${page}&_limit=${limit}`).then((res) => {
             // console.log(res.data);
             setState(res.data)
         })
@@ -33,7 +33,7 @@ export const Course = () => {
 
     const handleSearch = (e) => {
         e.preventDefault();
-         axios.get(`http://localhost:5000/courses?q=${search}`).then((res) => {
+         axios.get(`https://seaarching-yard-dataabase.herokuapp.com/courses?q=${search}`).then((res) => {
             // console.log(res.data);
             setState(res.data)
             setSearch(" ")
@@ -43,12 +43,12 @@ export const Course = () => {
     const handleSort = (e) => {
         let value = e.target.value
         if(value == "LowToHigh"){
-            axios.get(`http://localhost:5000/courses?_sort=price&_order=asc`).then((res) => {
+            axios.get(`https://seaarching-yard-dataabase.herokuapp.com/courses?_sort=price&_order=asc`).then((res) => {
             // console.log(res.data);
             setState(res.data)
         })
         }else if(value == "HighToLow"){
-            axios.get(`http://localhost:5000/courses?_sort=price&_order=desc`).then((res) => {
+            axios.get(`https://seaarching-yard-dataabase.herokuapp.com/courses?_sort=price&_order=desc`).then((res) => {
                 // console.log(res.data);
                 setState(res.data)
             })
@@ -58,19 +58,19 @@ export const Course = () => {
     const handleFilter = (el) => {
         let value = el.target.value
         if(value == "beginner"){
-            axios.get(`http://localhost:5000/courses?level=Beginner`).then((res) => {
+            axios.get(`https://seaarching-yard-dataabase.herokuapp.com/courses?level=Beginner`).then((res) => {
             console.log(res.data);
             setState(res.data)
         })
         }
         else if(value == "intermediate"){
-            axios.get(`http://localhost:5000/courses?level=Intermediate`).then((res) => {
+            axios.get(`https://seaarching-yard-dataabase.herokuapp.com/courses?level=Intermediate`).then((res) => {
                 console.log(res.data);
                 setState(res.data)
             })
         }
         else if(value == "proficient"){
-            axios.get(`http://localhost:5000/courses?level=Proficient`).then((res) => {
+            axios.get(`https://seaarching-yard-dataabase.herokuapp.com/courses?level=Proficient`).then((res) => {
                 console.log(res.data);
                 setState(res.data)
             })
