@@ -22,18 +22,18 @@ export const Course = () => {
 
     const filterValues = ["beginner","intermediate","proficient"]
 
-    // const limit = 3
+    const limit = 3
 
     const fetchData = () => {
-        axios.get(`http://localhost:5000/courses?_page=${page}&_limit=3`).then((res) => {
+        axios.get(`http://localhost:5000/courses?_page=${page}&_limit=${limit}`).then((res) => {
             // console.log(res.data);
             setState(res.data)
         })
     }
 
-    const handleSearch = async (e) => {
+    const handleSearch = (e) => {
         e.preventDefault();
-        return await axios.get(`http://localhost:5000/courses?q=${search}`).then((res) => {
+         axios.get(`http://localhost:5000/courses?q=${search}`).then((res) => {
             console.log(res.data);
             setState(res.data)
             setSearch("")
@@ -114,7 +114,7 @@ export const Course = () => {
             <Text fontSize='20px' textAlign={['center',"center","left"]} marginLeft='10px' marginTop='10px' fontWeight='bold'>Course Name: {e.title}</Text>
             <Box display={["block","",'flex']} justifyContent='space-between' margin='10px' fontSize='15px'>
             <Text>Course Duration: {e.hour}</Text>
-            <Text>Level: {e.level}</Text>
+            <Text>Level: <b>{e.level}</b></Text>
             </Box>
             <Text textAlign={['center',"center","left"]} marginLeft='10px' marginBottom='10px'><b>Price: ₹{e.price}</b></Text>
             </GridItem>)
@@ -122,22 +122,22 @@ export const Course = () => {
         }
     </Grid>
 
-        <Box gap='10px' marginTop='50px'>
+        <Box display='flex' gap='10px' marginTop='50px' justifyContent='center'>
             <Button onClick = {() => {if(page == 1){
                             setPage(page)
 
                               }else{setPage(page-1)}  
-                                }} disabled={page == 1}>Prev</Button>
+                                }} disabled={page == 1} colorScheme='blue'>Prev</Button>
 
             <Button onClick = {() => {
             let totalpage = state.length+1
-            if(page == totalpage){
+            if(page > totalpage){
                 return
 
             }else{
                 setPage(page+1)
             }
-            }}>Next</Button>
+            }} disabled={page > state.length+1} colorScheme='blue'>Next</Button>
         </Box>
 
     </Box>
