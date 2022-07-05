@@ -89,7 +89,7 @@ export const Course = () => {
     </Box>
     
 
-    <Box display={["block","flex","flex"]} justifyContent='space-between' margin={["auto","10px","20px"]} marginBottom={["35px","50px","50px"]} marginTop='20px'>
+    <Box display={["flex","flex","flex"]} justifyContent='space-between' margin={["auto","10px","20px"]} marginBottom={["35px","50px","50px"]} marginTop='20px'>
     <Box w='150px'>
     <Select placeholder='Filter By' onChange={handleFilter} size='sm'>
        {filterValues.map((e,index) => (<option value={e} key={index}>{e}</option>)
